@@ -6,8 +6,42 @@
     <title>Entrega2</title>
 </head>
 <body>
+    <div>
+        <button id="cambiarNegro">Cambiar color a Oscuro</button>
+        <button id="cambiarBlanco">Cambiar color a Blanco</button>
+    </div>
+    <!-- <input class="button_grey" id="eventoOpciones" type="button" value="Evento 1" onclick="solicitarNumero()">// aca este boton tendria que darme las opciones de nuevo
+    no supe hacer que funcione xd -->
+
+    <main id="main">
+
+        <div class="botones">MENU
+            <input class="boton" id="eventoAutos" type="button" value="Autos">
+            <input class="boton" id="eventoMotos" type="button" value="Motos">
+            <input class="boton" id="eventoBicicletas" type="button" value="Bicicletas">
+            <input class="boton" id="eventoOtro" type="button" value="Otros">
+        </div>
+
+        <form id="formulario">
+            <input type="text">
+            <input type="number">
+            <input type="email">
+            <input type="submit" value="Send" class="button_grey" >
+        </form>
+
+        <div>
+            <h4 id="nombre"></h4>
+            <h4 id="edad"></h4>
+            <h4 id="email"></h4>
+        </div>
+
+        <button class="button_grey" id="clearLS">
+            Borrar Local Storage
+        </button>
+    </main>
+    <div id="resultado"></div>
+
     <script src="js/index.js"></script>
-    <input class="button_grey" id="eventoOpciones" type="button" value="Evento 1" onclick="solicitarNumero()">// aca este boton tendria que darme las opciones de nuevo
-    no supe hacer que funcione xd
+    <script src="js/storage.js"></script>
 </body>
 </html>

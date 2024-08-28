@@ -93,6 +93,30 @@ function opciones() {
             console.log(resultado);
         });
     }
+    // Aca queria hacer que la info se muestre tambien en pantalla
+    if (resultados) {
+        const resultadoDiv = document.getElementById('resultado');
+        resultadoDiv.innerHTML = ''; 
+        resultados.forEach(function(resultado) {
+            const texto = `Marca: ${resultado.marca}, Color: ${resultado.color}, Precio: ${resultado.precio}, Modelo: ${resultado.modelo}`;
+            resultadoDiv.innerHTML += `<p>${texto}</p>`; 
+        });
+    }
 }
 
 opciones();
+
+//  De aca para adelante son cosas nuevas para la entrega.
+//  Cree otro js para los storage.
+//  Capaz hay algunas cosas de mas porque lo hice en diferentes dias y estuve un poco atrasado.
+
+const cuerpo = document.body;
+const botonOscurecer = document.querySelector('#cambiarNegro');
+const botonBlanco = document.querySelector('#cambiarBlanco');
+
+botonOscurecer.addEventListener("click", () => {
+    cuerpo.style.backgroundColor = "darkgray";
+})
+
+botonBlanco.onclick = () => { cuerpo.style.backgroundColor = "white" };
+
